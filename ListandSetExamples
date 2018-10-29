@@ -1,0 +1,84 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class IterationExamples {
+    public static void main(String[] args) {
+        /*Set<String> programmingLanguages = new HashSet<>();
+        programmingLanguages.add("C");
+        programmingLanguages.add("C++");
+        programmingLanguages.add("Java");
+        programmingLanguages.add("Python");
+        programmingLanguages.add("PHP");
+        programmingLanguages.add("Ruby");
+
+        System.out.println("=== Iterate over a HashSet using Java 8 forEach and lambda ===");
+        programmingLanguages.forEach(programmingLanguage -> {
+            System.out.println(programmingLanguage);
+        });
+
+        System.out.println("=== Iterate over a HashSet using iterator() ===");
+        Iterator<String> programmingLanguageIterator = programmingLanguages.iterator();
+        while (programmingLanguageIterator.hasNext()) {
+            String programmingLanguage = programmingLanguageIterator.next();
+            System.out.println(programmingLanguage);
+        }
+
+        System.out.println("=== Iterate over a HashSet using iterator() and Java 8 forEachRemaining() method ===");
+        programmingLanguageIterator = programmingLanguages.iterator();
+        programmingLanguageIterator.forEachRemaining(programmingLanguage -> {
+            System.out.println(programmingLanguage);
+        });
+
+        System.out.println("=== Iterate over a HashSet using simple for-each loop ===");
+        for(String programmingLanguage: programmingLanguages) {
+            System.out.println(programmingLanguage);
+        }*/
+    	
+    	Set <Integer> t=new HashSet<>();
+    	t.add(1);
+    	t.add(9);
+    	t.add(4);
+    	t.add(4);
+    	t.add(5);
+    	t.add(6);
+    	t.add(7);
+    	t.add(8);
+    	t.add(null);
+    	t.add(9);
+    	System.out.println(t);
+    	
+    	List <String> ls=new ArrayList<>();
+    	ls.add("hello");
+    	ls.add("Prasad");
+    	ls.add("Rayudu");
+    	List <String> ls1=new ArrayList<>();
+    	ls1.add("hello");
+    	ls1.add("Prasad");
+    	ls1.add("Rayudu");
+    	System.out.println(ls);
+    	System.out.println(ls.get(1));
+    	System.out.println(ls.indexOf("Rayudu"));
+    	System.out.println(ls.remove("Prasad"));
+    	System.out.println(ls);
+    	System.out.println(ls.addAll(ls1));
+    	System.out.println(ls);    	
+    	 	
+    	
+   /* 	for(int i:t)
+    	{
+    		System.out.println(i);
+    	}
+    */
+    /*	Iterator it =t.iterator();
+    	while(it.hasNext())
+    	{
+    		System.out.println(it.next());
+    	}*/
+    /*	t.forEach(s -> { System.out.println(s);
+    	}
+    	);
+    	*/
+    }
+}
